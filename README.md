@@ -23,7 +23,7 @@ To complete the custom portfolio section I used the existing three sample price 
 all_data.ewm(halflife='21 days', times=all_data.index).mean()
 ```
 
-![Rolling Statistics Challenge: Exponentially Weighted Average](/Resources/output3.PNG)
+![Rolling Statistics Challenge: Exponentially Weighted Average](/Resources/output3.png)
 
 ```
 # Calculate the correlation
@@ -32,7 +32,7 @@ price_corr = all_data.corr()
 sns.heatmap(price_corr, vmin=-1, vmax=1)
 ```
 
-![Rolling Statistics Challenge: Exponentially Weighted Average](/Resources/output4.PNG)
+![Rolling Statistics Challenge: Exponentially Weighted Average](/Resources/output4.png)
 
 ```
 # Calculate and plot Beta
@@ -60,7 +60,7 @@ custom_rolling_beta.plot(figsize=(20, 10), title='Rolling 60-Day Beta of CUSTOM 
 sns.lmplot(x='S&P TSX', y='CUSTOM', data=all_portfolio_df, aspect=1.5, fit_reg=True)
 ```
 
-![Rolling 60-Day Beta of CUSTOM PORTFOLIO](/Resources/output1.PNG)
+![Rolling 60-Day Beta of CUSTOM PORTFOLIO](/Resources/output1.png)
 
 ```
 # Calculate Annualized Sharpe Ratios
@@ -71,4 +71,4 @@ all_sharpe_ratios
 all_sharpe_ratios.plot.bar(title="All Sharpe Ratios")
 ```
 
-![Sharpe ratios](/Resources/output2.PNG)
+![Sharpe ratios](/Resources/output2.png)
